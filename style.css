@@ -4,7 +4,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, #7708ff, #a90496, red);
+    background: linear-gradient(45deg, #2d0460, #870478, rgb(215, 0, 0));
     background-repeat: no-repeat;
     height: 100%;
     margin: 0;
@@ -304,10 +304,108 @@ h1, h2, h3, h4, h5, h6 {
   fill: rgba(255, 255, 255, 0.7);
 }
 
+/* ======| PROJECTS |===== */
+
+#projects {
+  margin-bottom: 5vw;
+}
+
+#projects h3 {
+  margin-top: 3vw;
+  font-size: 3vw;
+}
+
+.gallery {
+  padding: 3vw 2vw;
+  display: grid;
+  gap: 3vw;
+}
+
+.gallery {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery--models img,
+.gallery--arts img {
+  border-radius: .5vw;
+  transition: .3s;
+}
+
+.gallery--models img {
+  width: 100%;
+}
+
+.gallery--arts img {
+  margin: 0 auto;
+  height: 22vw;
+}
+
+.gallery--models img:hover,
+.gallery--arts img:hover {
+  transform: scale(1.1);
+  border-radius: .5vw;
+  box-shadow: .3vw .3vw 1vw rgba(000, 000, 000, 0.5);
+}
+
+.gallery--devs {
+  grid-template-columns: 1fr;
+}
+
+.project-item {
+  text-align: center;
+}
+
+.project-item > div {
+  font-size: 3vw;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+
+
+.img-container {
+  display: inline-block;
+  position: relative;
+}
+
+.project-item img {
+  width: 40vw;
+}
+
+.img-container::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  background: linear-gradient(#7708ff, #7b0089);
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transition: .3s;
+}
+
+.img-container:hover::after {
+  opacity: .9;
+}
+
+.img-container::before {
+  content: 'Open on GitHub';
+  position: absolute;
+  font-size: 3vw;
+  opacity: 0;
+  top: 45%;
+  width: 100%;
+  z-index: 3;
+  transition: .3s;
+}
+
+.img-container:hover::before {
+  opacity: 1;
+}
+
 /* ======| CONTACTS |===== */
 
 #contacts {
-  padding: 3vw 0;
+  padding: 2vw 0;
   background: rgba(000, 000, 000, 0.5);
 }
 
@@ -336,7 +434,8 @@ footer {
 
 .copyright {
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 4vw;
+  text-align: center;
+  margin-top: 2vw;
   width: 100%;
 }
 
@@ -358,6 +457,20 @@ footer {
     margin-top: 250px;
   }
   .about--inner {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    padding: 0 10vw;
+    grid-template-columns: 1fr;
+    gap: 3vw;
+  }
+  .gallery--arts img {
+    height: auto;
+    width: 100%;
+  }
+  .gallery img:hover {
+    transform: none;
+    box-shadow: none;
+    gap: 3vw;
   }
 }

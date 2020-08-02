@@ -12,7 +12,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body id="body">
-
   <!-- Sprite -->
   <svg style="display: none;">
     <symbol id="brush" viewBox="0 0 512 512">
@@ -93,13 +92,12 @@
       </g>
     </symbol>
   </svg> <!-- /Sprite -->
-
   <div class="navbar">
     <div class="navbar-items">
       <a href="#">MAIN</a>
       <a href="#about">ABOUT</a>
-      <a href="#">PROJECTS</a>
-      <a href="#">CONTACTS</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contacts">CONTACTS</a>
     </div>
     <div class="navbar-social">
       <a href="https://t.me/MIYAZAKl" target="_blank"><img src="assets/images/telegram.png" alt="telegram icon"></a>
@@ -108,7 +106,6 @@
       <a href="https://www.linkedin.com/in/юрий-макогон-33ba571b3/" target="_blank"><img src="assets/images/linkedin.png" alt="linkedin icon"></a>
     </div>
   </div>
-
   <!-- MAIN -->
   <div id="main">
     <div id="main__inner">
@@ -149,15 +146,14 @@
       </div> 
     </div>
     <div class="look-work">
-      <span>If you are interested in my work - look in the</span>
+      <span>If you are interested in my works - look in the</span>
       <div class="btn-container">
         <div class="btn btn--works">
-          <a>Projects</a>
+          <a href="#projects">Projects</a>
         </div>
       </div>
     </div>
   </div> <!-- /MAIN -->
-
   <!-- ABOUT -->
   <div id="about">
     <h1 class="section-header">About me</h1>
@@ -184,7 +180,7 @@
           <ul>
             <li>Version control systems</li>
             <li>C language</li>
-            <li>HMTL &#38 CSS</li>
+            <li>HMTL &#38; CSS</li>
             <li>JavaScript</li>
             <li>GTK+</li>
           </ul>
@@ -232,15 +228,52 @@
     </div>
     </div>
   </div> <!-- /ABOUT -->
-
   <!-- PROJECTS -->
   <div id="projects">
     <h1 class="section-header">My projects</h1>
     <div class="container">
-
+      <h3>Models gallery</h3>
+      <div class="gallery gallery--models">
+        <img src="assets/images/projects/model-1.jpeg" alt="model 1">
+        <img src="assets/images/projects/model-2.jpeg" alt="model 2">
+        <img src="assets/images/projects/model-3.jpeg" alt="model 3">
+      </div>
+      <h3>Art gallery</h3>
+      <div class="gallery gallery--arts">
+        <img src="assets/images/projects/art-1.jpg" alt="art 1">
+        <img src="assets/images/projects/art-2.jpg" alt="art 2">
+        <img src="assets/images/projects/art-3.jpg" alt="art 3">
+      </div>
+      <h3>Developer projects</h3>
+      <div class="gallery gallery--devs">
+        <div class="project-item">
+          <div>Uchat</div>
+          <a href="https://github.com/unitucode/uchat" target="_blank">
+            <div class="img-container">
+              <img src="assets/images/projects/project-1.jpg" alt="project 1">
+            </div>
+          </a>
+        </div>
+        <div class="project-item">
+          <div>Ushell</div>
+          <a href="https://github.com/unitucode/ush" target="_blank">
+            <span class="img-container">
+              <img src="assets/images/projects/project-2.jpg" alt="project 2">
+            </span>
+          </a>
+        </div>
+        <div class="project-item">
+          <div>Uls</div>
+            <a href="https://github.com/yuriimakohon/uls" target="_blank">
+              <div class="img-container">
+                <img src="assets/images/projects/project-3.jpg" alt="project 3">
+              </div>
+            </a>
+        </div>
+      </div>
     </div>
   </div> <!-- /PROJECTS -->
-
+  <!-- CONTACTS -->
   <div id="contacts">
     <div class="container">
       <footer>
@@ -258,9 +291,9 @@
             <a href="https://www.linkedin.com/in/юрий-макогон-33ba571b3/" target="_blank"><img src="assets/images/linkedin.png" alt="linkedin icon"></a>
           </div>
         </div>
-        <span class="copyright">&copy 2020 UPortfolio. All rights reserved.</span>
+        <div class="copyright">&copy; 2020 UPortfolio. All rights reserved.</div>
       </footer>
     </div>
-  </div>
+  </div> <!-- /CONTACTS -->
 </body>
 </html>
